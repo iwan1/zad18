@@ -19,6 +19,17 @@ public class main {
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println("Odwo³anie siê poza zakres tablicy!");
 		}
+		try{
+			System.out.println(napis[7].length());
+		}catch(RuntimeException e){
+			System.out.println("Wykryto wyjatek!");
+		}
+		try{
+			System.out.println(napis[1].length());
+		}catch(Exception e){
+			System.out.println("Wykryto wyjatek!");
+		}
+		
 	}
 
 }
